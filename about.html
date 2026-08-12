@@ -1,15 +1,15 @@
-cat > index.html <<'EOF'
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Genesis & Co. Legacy Services</title>
+    <title>About Us | Genesis & Co. Legacy Services</title>
 
     <meta
         name="description"
-        content="Genesis & Co. Legacy Services provides Life Insurance, Health Insurance, Real Estate, Tax Preparation, and Notary Services."
+        content="Learn more about Genesis & Co. Legacy Services and our commitment to helping individuals and families protect, prepare, and build their legacy."
     >
 
     <link rel="stylesheet" href="css/style.css">
@@ -25,6 +25,7 @@ cat > index.html <<'EOF'
 
 <body>
 
+
 <!-- =====================================================
      HEADER
 ===================================================== -->
@@ -34,15 +35,19 @@ cat > index.html <<'EOF'
     <div class="container nav-container">
 
         <a href="index.html" class="logo">
+
+            <!-- LOGO PLACEHOLDER -->
             <div class="logo-placeholder">
-                LOGO 1
+                LOGO
             </div>
 
             <div class="brand-name">
                 <span>Genesis & Co.</span>
                 <small>Legacy Services</small>
             </div>
+
         </a>
+
 
         <button
             class="menu-toggle"
@@ -55,15 +60,30 @@ cat > index.html <<'EOF'
             <span></span>
         </button>
 
+
         <nav class="main-nav" id="mainNav">
 
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#why-us">Why Choose Us</a>
-            <a href="#contact">Contact</a>
+            <a href="index.html">
+                Home
+            </a>
 
-            <a href="#contact" class="nav-button">
+            <a href="about.html" class="active">
+                About
+            </a>
+
+            <a href="services.html">
+                Services
+            </a>
+
+            <a href="index.html#why-us">
+                Why Choose Us
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+            <a href="contact.html" class="nav-button">
                 Get Started
             </a>
 
@@ -76,57 +96,28 @@ cat > index.html <<'EOF'
 
 <main>
 
+
 <!-- =====================================================
-     HERO
+     PAGE HERO
 ===================================================== -->
 
-<section class="hero" id="home">
+<section class="page-hero">
 
-    <div class="hero-overlay"></div>
+    <div class="container">
 
-    <div class="container hero-content">
+        <p class="section-label">
+            ABOUT GENESIS & CO.
+        </p>
 
-        <div class="hero-text">
+        <h1>
+            Protecting Your Future.
+            <span>Building Your Legacy.</span>
+        </h1>
 
-            <p class="eyebrow">
-                PROTECT • PREPARE • BUILD YOUR LEGACY
-            </p>
-
-            <h1>
-                Your Future Deserves
-                <span>To Be Protected.</span>
-            </h1>
-
-            <p class="hero-description">
-                Professional services designed to help individuals and
-                families protect what matters most, prepare for tomorrow,
-                and build a lasting legacy.
-            </p>
-
-            <div class="hero-buttons">
-
-                <a href="#services" class="btn btn-primary">
-                    Explore Our Services
-                </a>
-
-                <a href="#contact" class="btn btn-outline">
-                    Contact Us
-                </a>
-
-            </div>
-
-        </div>
-
-
-        <div class="hero-image">
-
-            <!-- IMAGE PLACEHOLDER -->
-
-            <div class="image-placeholder client-placeholder">
-                CLIENT PHOTO
-            </div>
-
-        </div>
+        <p>
+            Your future matters. Your family matters.
+            Your legacy matters.
+        </p>
 
     </div>
 
@@ -134,16 +125,16 @@ cat > index.html <<'EOF'
 
 
 <!-- =====================================================
-     ABOUT
+     ABOUT GENESIS & CO.
 ===================================================== -->
 
-<section class="about section" id="about">
+<section class="about section">
 
     <div class="container about-grid">
 
         <div class="about-image">
 
-            <!-- IMAGE PLACEHOLDER -->
+            <!-- CLIENT PHOTO PLACEHOLDER -->
 
             <div class="image-placeholder">
                 CLIENT PHOTO
@@ -155,34 +146,48 @@ cat > index.html <<'EOF'
         <div class="about-content">
 
             <p class="section-label">
-                ABOUT US
+                ABOUT GENESIS & CO. LEGACY SERVICES
             </p>
 
             <h2>
-                Helping You Protect
-                <span>What Matters Most</span>
+                Protecting What Matters.
+                <span>Building What Lasts.</span>
             </h2>
 
             <p>
-                At Genesis & Co. Legacy Services, we believe protecting
-                your future starts with making informed decisions today.
+                At <strong>Genesis & Co. Legacy Services</strong>, we believe
+                protecting your future starts with making informed decisions
+                today.
             </p>
 
             <p>
-                We provide reliable, client-focused professional services
-                designed to help individuals and families protect,
-                prepare, and build their legacy.
+                We are a trusted, client-focused company dedicated to
+                providing reliable professional services that help
+                individuals and families protect, prepare, and build
+                their legacy.
             </p>
 
             <p>
-                From insurance and real estate to tax preparation and
-                notary services, we're here to make important decisions
-                simpler and more personal.
+                We offer a range of services including
+                <strong>Health Insurance, Life Insurance, Real Estate
+                Services, Tax Preparation, and Notary Services</strong>—
+                providing convenient solutions for many of life's important
+                needs, all with the personal attention you deserve.
             </p>
 
-            <a href="#services" class="text-link">
-                Discover Our Services →
-            </a>
+            <p>
+                Our commitment is simple:
+                <strong>
+                    to serve with honesty, integrity, transparency,
+                    and genuine care.
+                </strong>
+            </p>
+
+            <p>
+                We take the time to understand each client's unique needs,
+                explain their options clearly, and provide knowledgeable
+                guidance so they can make decisions with confidence.
+            </p>
 
         </div>
 
@@ -192,26 +197,28 @@ cat > index.html <<'EOF'
 
 
 <!-- =====================================================
-     SERVICES
+     PROFESSIONAL COMMITMENT
 ===================================================== -->
 
-<section class="services section" id="services">
+<section class="services section">
 
     <div class="container">
 
         <div class="section-heading">
 
             <p class="section-label">
-                WHAT WE OFFER
+                OUR COMMITMENT
             </p>
 
             <h2>
-                Our <span>Services</span>
+                Service Built On
+                <span>Trust & Integrity</span>
             </h2>
 
             <p>
-                Professional solutions designed around your needs,
-                your goals, and your future.
+                As licensed professionals, we take pride in delivering
+                dependable service and building lasting relationships
+                based on trust.
             </p>
 
         </div>
@@ -225,36 +232,15 @@ cat > index.html <<'EOF'
                     🛡️
                 </div>
 
-                <h3>Life Insurance</h3>
+                <h3>
+                    Protect Your Family
+                </h3>
 
                 <p>
-                    Help protect the financial future of the people
-                    who matter most to you.
+                    Whether you're protecting your family through
+                    insurance or planning for the future, we're here
+                    to help you understand your options.
                 </p>
-
-                <a href="#contact">
-                    Learn More →
-                </a>
-
-            </article>
-
-
-            <article class="service-card">
-
-                <div class="service-icon">
-                    ❤️
-                </div>
-
-                <h3>Health Insurance</h3>
-
-                <p>
-                    Explore coverage options designed to help you
-                    protect your health and financial well-being.
-                </p>
-
-                <a href="#contact">
-                    Learn More →
-                </a>
 
             </article>
 
@@ -265,16 +251,15 @@ cat > index.html <<'EOF'
                     🏡
                 </div>
 
-                <h3>Real Estate</h3>
+                <h3>
+                    Real Estate
+                </h3>
 
                 <p>
-                    Professional real estate support to help you
-                    navigate important property decisions.
+                    Whether purchasing or selling real estate,
+                    we provide professional support throughout
+                    important property decisions.
                 </p>
-
-                <a href="#contact">
-                    Learn More →
-                </a>
 
             </article>
 
@@ -285,16 +270,15 @@ cat > index.html <<'EOF'
                     📋
                 </div>
 
-                <h3>Tax Preparation</h3>
+                <h3>
+                    Tax Preparation
+                </h3>
 
                 <p>
-                    Convenient tax preparation services designed to
-                    make the process easier and less stressful.
+                    We help make tax preparation more convenient
+                    while providing professional and dependable
+                    service.
                 </p>
-
-                <a href="#contact">
-                    Learn More →
-                </a>
 
             </article>
 
@@ -305,16 +289,33 @@ cat > index.html <<'EOF'
                     ✍🏽
                 </div>
 
-                <h3>Notary Services</h3>
+                <h3>
+                    Notary Services
+                </h3>
 
                 <p>
-                    Professional notary services with a focus on
-                    convenience, accuracy, and professionalism.
+                    Professional notary services delivered with
+                    accuracy, care, and attention to your needs.
                 </p>
 
-                <a href="#contact">
-                    Learn More →
-                </a>
+            </article>
+
+
+            <article class="service-card">
+
+                <div class="service-icon">
+                    🤝
+                </div>
+
+                <h3>
+                    Lasting Relationships
+                </h3>
+
+                <p>
+                    We believe in building lasting relationships
+                    with our clients through honesty, transparency,
+                    and genuine care.
+                </p>
 
             </article>
 
@@ -340,14 +341,22 @@ cat > index.html <<'EOF'
             </p>
 
             <h2>
-                Service You Can
-                <span>Feel Confident About</span>
+                Why Clients
+                <span>Choose Genesis & Co.</span>
             </h2>
+
+            <p>
+                We believe insurance and professional services should
+                feel less complicated, more convenient, and more personal.
+            </p>
 
         </div>
 
 
         <div class="why-grid">
+
+
+            <!-- VIRTUAL SERVICES -->
 
             <div class="why-card">
 
@@ -356,7 +365,7 @@ cat > index.html <<'EOF'
                 </div>
 
                 <h3>
-                    90% Virtual
+                    90% of Our Services Can Be Completed Virtually
                 </h3>
 
                 <p>
@@ -367,6 +376,8 @@ cat > index.html <<'EOF'
 
             </div>
 
+
+            <!-- LICENSED & INSURED -->
 
             <div class="why-card">
 
@@ -387,6 +398,8 @@ cat > index.html <<'EOF'
             </div>
 
 
+            <!-- PROFESSIONAL & KNOWLEDGEABLE -->
+
             <div class="why-card">
 
                 <div class="why-icon">
@@ -405,6 +418,8 @@ cat > index.html <<'EOF'
 
             </div>
 
+
+            <!-- FRIENDLY & PERSONAL -->
 
             <div class="why-card">
 
@@ -428,6 +443,8 @@ cat > index.html <<'EOF'
         </div>
 
 
+        <!-- WHY CHOOSE US STATEMENT -->
+
         <div class="why-statement">
 
             <h3>
@@ -446,53 +463,73 @@ cat > index.html <<'EOF'
 
 
 <!-- =====================================================
-     PARTNERS
+     OUR SERVICES
 ===================================================== -->
 
-<section class="partners section">
+<section class="about section">
 
-    <div class="container">
+    <div class="container about-grid">
 
-        <div class="section-heading">
+        <div class="about-content">
 
             <p class="section-label">
-                OUR PARTNERS
+                HOW WE CAN HELP
             </p>
 
             <h2>
-                Trusted <span>Partners</span>
+                Professional Services
+                <span>For Life's Important Needs</span>
             </h2>
 
             <p>
-                We work with trusted organizations to help provide
-                solutions that fit your needs.
+                Whether you're protecting your family, navigating
+                your taxes, purchasing or selling real estate, or
+                needing professional notary services,
+                <strong>Genesis & Co. Legacy Services</strong>
+                is here to help.
             </p>
+
+            <p>
+                Our services include:
+            </p>
+
+            <ul class="about-service-list">
+
+                <li>
+                    🛡️ Life Insurance
+                </li>
+
+                <li>
+                    ❤️ Health Insurance
+                </li>
+
+                <li>
+                    🏡 Real Estate Services
+                </li>
+
+                <li>
+                    📋 Tax Preparation
+                </li>
+
+                <li>
+                    ✍🏽 Notary Services
+                </li>
+
+            </ul>
+
+            <a href="services.html" class="btn btn-primary">
+                Explore Our Services
+            </a>
 
         </div>
 
 
-        <div class="partners-grid">
+        <div class="about-image">
 
-            <!-- PARTNER LOGO PLACEHOLDERS -->
+            <!-- SECOND CLIENT PHOTO PLACEHOLDER -->
 
-            <div class="partner-placeholder">
-                PARTNER LOGO
-            </div>
-
-            <div class="partner-placeholder">
-                PARTNER LOGO
-            </div>
-
-            <div class="partner-placeholder">
-                PARTNER LOGO
-            </div>
-
-            <div class="partner-placeholder">
-                PARTNER LOGO
-            </div>
-
-            <div class="partner-placeholder">
-                PARTNER LOGO
+            <div class="image-placeholder">
+                CLIENT PHOTO
             </div>
 
         </div>
@@ -503,188 +540,41 @@ cat > index.html <<'EOF'
 
 
 <!-- =====================================================
-     CONTACT
+     LEGACY MESSAGE
 ===================================================== -->
 
-<section class="contact section" id="contact">
+<section class="why-us section">
 
-    <div class="container contact-grid">
+    <div class="container">
 
-        <div class="contact-content">
+        <div class="why-statement">
 
-            <p class="section-label">
-                GET IN TOUCH
-            </p>
-
-            <h2>
-                Let's Talk About
-                <span>Your Future</span>
-            </h2>
+            <h3>
+                Your future matters.
+                Your family matters.
+                Your legacy matters.
+            </h3>
 
             <p>
-                Have questions about our services? We're here to
-                help you understand your options and find the
-                right solution for your needs.
+                At Genesis & Co., we're here to help you
+                <strong>
+                    protect what matters today, build for tomorrow,
+                    and create a legacy that lasts.
+                </strong>
             </p>
 
+            <br>
 
-            <div class="contact-details">
-
-                <div class="contact-item">
-
-                    <strong>Phone</strong>
-
-                    <a href="tel:9104451813">
-                        910-445-1813
-                    </a>
-
-                </div>
-
-
-                <div class="contact-item">
-
-                    <strong>Email</strong>
-
-                    <a href="mailto:kamaiesha618@gmail.com">
-                        kamaiesha618@gmail.com
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <div class="contact-form-container">
-
-            <form class="contact-form">
-
-                <div class="form-group">
-
-                    <label for="name">
-                        Name
-                    </label>
-
-                    <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        placeholder="Your Name"
-                        required
-                    >
-
-                </div>
-
-
-                <div class="form-row">
-
-                    <div class="form-group">
-
-                        <label for="email">
-                            Email
-                        </label>
-
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            placeholder="Your Email"
-                            required
-                        >
-
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <label for="phone">
-                            Phone
-                        </label>
-
-                        <input
-                            type="tel"
-                            id="phone"
-                            name="phone"
-                            placeholder="Your Phone"
-                        >
-
-                    </div>
-
-                </div>
-
-
-                <div class="form-group">
-
-                    <label for="service">
-                        Service
-                    </label>
-
-                    <select id="service" name="service">
-
-                        <option value="">
-                            Select a Service
-                        </option>
-
-                        <option>
-                            Life Insurance
-                        </option>
-
-                        <option>
-                            Health Insurance
-                        </option>
-
-                        <option>
-                            Real Estate
-                        </option>
-
-                        <option>
-                            Tax Preparation
-                        </option>
-
-                        <option>
-                            Notary Services
-                        </option>
-
-                        <option>
-                            General Inquiry
-                        </option>
-
-                    </select>
-
-                </div>
-
-
-                <div class="form-group">
-
-                    <label for="message">
-                        Message
-                    </label>
-
-                    <textarea
-                        id="message"
-                        name="message"
-                        rows="5"
-                        placeholder="How can we help?"
-                    ></textarea>
-
-                </div>
-
-
-                <button
-                    type="submit"
-                    class="btn btn-primary form-button"
-                >
-                    Send Message
-                </button>
-
-            </form>
+            <a href="contact.html" class="btn btn-outline">
+                Get Started
+            </a>
 
         </div>
 
     </div>
 
 </section>
+
 
 </main>
 
@@ -697,7 +587,12 @@ cat > index.html <<'EOF'
 
     <div class="container footer-grid">
 
+
+        <!-- FOOTER BRAND -->
+
         <div class="footer-brand">
+
+            <!-- SECOND LOGO PLACEHOLDER -->
 
             <div class="footer-logo-placeholder">
                 LOGO 2
@@ -719,34 +614,38 @@ cat > index.html <<'EOF'
         </div>
 
 
+        <!-- SERVICES -->
+
         <div class="footer-column">
 
             <h4>
                 Services
             </h4>
 
-            <a href="#services">
+            <a href="services.html">
                 Life Insurance
             </a>
 
-            <a href="#services">
+            <a href="services.html">
                 Health Insurance
             </a>
 
-            <a href="#services">
+            <a href="services.html">
                 Real Estate
             </a>
 
-            <a href="#services">
+            <a href="services.html">
                 Tax Preparation
             </a>
 
-            <a href="#services">
+            <a href="services.html">
                 Notary Services
             </a>
 
         </div>
 
+
+        <!-- QUICK LINKS -->
 
         <div class="footer-column">
 
@@ -754,28 +653,30 @@ cat > index.html <<'EOF'
                 Quick Links
             </h4>
 
-            <a href="#home">
+            <a href="index.html">
                 Home
             </a>
 
-            <a href="#about">
+            <a href="about.html">
                 About
             </a>
 
-            <a href="#services">
+            <a href="services.html">
                 Services
             </a>
 
-            <a href="#why-us">
+            <a href="index.html#why-us">
                 Why Choose Us
             </a>
 
-            <a href="#contact">
+            <a href="contact.html">
                 Contact
             </a>
 
         </div>
 
+
+        <!-- CONTACT -->
 
         <div class="footer-column">
 
@@ -801,7 +702,8 @@ cat > index.html <<'EOF'
         <div class="container">
 
             <p>
-                © 2026 Genesis & Co. Legacy Services. All Rights Reserved.
+                © 2026 Genesis & Co. Legacy Services.
+                All Rights Reserved.
             </p>
 
         </div>
@@ -815,4 +717,3 @@ cat > index.html <<'EOF'
 
 </body>
 </html>
-EOF
