@@ -1484,5 +1484,23 @@ ul {
         font-size: 0.52rem;
         letter-spacing: 1px;
     }
+/* =========================================================
+   GREEN CHECK ICONS
+========================================================= */
 
+.service-check-icon,
+.why-check-icon {
+    color: var(--green) !important;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.service-check-icon {
+    font-size: 1.8rem;
+}
+
+.why-check-icon {
+    font-size: 1.7rem;
+}
 }
