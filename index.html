@@ -1423,7 +1423,6 @@
     aria-hidden="true"
 >
 
-
     <div
         class="faq-overlay"
         data-faq-close
@@ -1442,12 +1441,9 @@
 
         <div class="faq-chat-header">
 
-
             <div class="faq-header-info">
 
-
                 <span class="faq-online-dot"></span>
-
 
                 <div>
 
@@ -1461,7 +1457,6 @@
 
                 </div>
 
-
             </div>
 
 
@@ -1474,12 +1469,11 @@
                 ×
             </button>
 
-
         </div>
 
 
 
-        <!-- BODY -->
+        <!-- CHAT BODY -->
 
         <div
             class="faq-chat-body"
@@ -1487,33 +1481,32 @@
         >
 
 
-            <div class="faq-message">
+            <!-- WELCOME MESSAGE -->
 
+            <div class="faq-message">
 
                 <div class="faq-avatar">
                     G
                 </div>
 
-
                 <div class="faq-bubble">
 
                     <p>
-
-                        Hi! Welcome to Genesis & Co.
-                        Legacy Services. How can we help you today?
-
+                        Hi! Welcome to Genesis & Co. Legacy Services.
+                        What can we help you with today?
                     </p>
 
                     <small>
-                        Select a question below.
+                        Choose a category below.
                     </small>
 
                 </div>
 
-
             </div>
 
 
+
+            <!-- DYNAMIC CONVERSATION -->
 
             <div
                 class="faq-conversation"
@@ -1522,109 +1515,87 @@
 
 
 
-            <div class="faq-question-list">
+            <!-- CATEGORIES -->
 
-
-                <button
-                    type="button"
-                    class="faq-question"
-                    data-faq="services"
-                >
-                    What services do you offer?
-                </button>
-
+            <div
+                class="faq-category-list"
+                id="faqCategoryList"
+            >
 
                 <button
                     type="button"
-                    class="faq-question"
-                    data-faq="virtual"
+                    class="faq-category"
+                    data-category="life"
                 >
-                    Can your services be completed virtually?
+                    Life Insurance
                 </button>
-
 
                 <button
                     type="button"
-                    class="faq-question"
-                    data-faq="health"
+                    class="faq-category"
+                    data-category="health"
                 >
-                    Do you help with ACA or Medicare?
+                    Health Insurance
                 </button>
-
 
                 <button
                     type="button"
-                    class="faq-question"
-                    data-faq="health-cost"
+                    class="faq-category"
+                    data-category="medicare"
                 >
-                    Can I qualify for low-cost health coverage?
+                    Medicare
                 </button>
-
 
                 <button
                     type="button"
-                    class="faq-question"
-                    data-faq="life"
+                    class="faq-category"
+                    data-category="aca"
                 >
-                    What types of life insurance do you offer?
+                    ACA / Marketplace
                 </button>
-
 
                 <button
                     type="button"
-                    class="faq-question"
-                    data-faq="tax"
+                    class="faq-category"
+                    data-category="realestate"
                 >
-                    What tax services do you offer?
+                    Real Estate
                 </button>
-
 
                 <button
                     type="button"
-                    class="faq-question"
-                    data-faq="notary"
+                    class="faq-category"
+                    data-category="tax"
                 >
-                    How does Remote Notary work?
+                    Tax Preparation
                 </button>
-
 
                 <button
                     type="button"
-                    class="faq-question"
-                    data-faq="realestate"
+                    class="faq-category"
+                    data-category="notary"
                 >
-                    Do you provide Real Estate services?
+                    Notary Services
                 </button>
-
 
                 <button
                     type="button"
-                    class="faq-question"
-                    data-faq="started"
+                    class="faq-category"
+                    data-category="general"
                 >
-                    How do I get started?
+                    General Questions
                 </button>
-
-
-                <button
-                    type="button"
-                    class="faq-question"
-                    data-faq="consultation"
-                >
-                    How do I book a free consultation?
-                </button>
-
-
-                <button
-                    type="button"
-                    class="faq-question"
-                    data-faq="contact"
-                >
-                    How can I contact Genesis & Co.?
-                </button>
-
 
             </div>
+
+
+
+            <!-- QUESTIONS -->
+
+            <div
+                class="faq-question-list"
+                id="faqQuestionList"
+            ></div>
 
 
         </div>
@@ -1635,7 +1606,6 @@
 
         <div class="faq-chat-footer">
 
-
             <a
                 href="contact.html"
                 class="faq-footer-link"
@@ -1643,26 +1613,21 @@
                 Get Started
             </a>
 
-
             <a
                 href="https://calendly.com/genesislegacyservices/initial-consultation"
-                class="faq-footer-book"
                 target="_blank"
                 rel="noopener noreferrer"
+                class="faq-footer-book"
             >
                 Book Free Consultation
             </a>
-
 
         </div>
 
 
     </div>
 
-
 </div>
-
-
 
 <!-- JAVASCRIPT -->
 
