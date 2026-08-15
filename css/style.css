@@ -1,7 +1,6 @@
 /* =========================================================
    GENESIS & CO. LEGACY SERVICES
    MAIN STYLESHEET
-   CLEAN RESPONSIVE VERSION
 ========================================================= */
 
 
@@ -28,13 +27,13 @@ body {
 }
 
 img {
-    display: block;
     max-width: 100%;
+    display: block;
 }
 
 a {
-    color: inherit;
     text-decoration: none;
+    color: inherit;
 }
 
 button,
@@ -54,11 +53,10 @@ ul {
 
 
 /* =========================================================
-   VARIABLES
+   COLOR VARIABLES
 ========================================================= */
 
 :root {
-
     --green-dark: #163c2c;
     --green: #245c43;
     --green-light: #4d8064;
@@ -68,7 +66,6 @@ ul {
     --gold-light: #d6bf87;
 
     --cream: #faf9f5;
-
     --white: #ffffff;
 
     --text-dark: #24342d;
@@ -77,8 +74,7 @@ ul {
 
     --border: #dfe7e1;
 
-    --shadow:
-        0 15px 45px rgba(22, 60, 44, 0.10);
+    --shadow: 0 15px 45px rgba(22, 60, 44, 0.10);
 
     --container: 1180px;
 }
@@ -90,13 +86,12 @@ ul {
 
 .container {
     width: min(92%, var(--container));
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 
 
 /* =========================================================
-   SECTIONS
+   SECTION
 ========================================================= */
 
 .section {
@@ -104,7 +99,6 @@ ul {
 }
 
 .section-heading {
-    width: 100%;
     max-width: 760px;
     margin: 0 auto 55px;
     text-align: center;
@@ -120,7 +114,6 @@ ul {
     font-size: 0.78rem;
     font-weight: 700;
     letter-spacing: 2px;
-    line-height: 1.4;
     text-transform: uppercase;
     margin-bottom: 14px;
 }
@@ -137,11 +130,11 @@ ul {
 
 .section-heading h2 span,
 .about-content h2 span,
-.legacy-content h2 span,
 .hero h1 span,
 .page-hero h1 span,
 .page-hero h2 span,
-.service-detail-content h2 span {
+.service-detail-content h2 span,
+.legacy-content h2 span {
     color: var(--gold);
 }
 
@@ -165,7 +158,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 25px;
+    gap: 30px;
 }
 
 
@@ -177,26 +170,26 @@ ul {
     display: flex;
     align-items: center;
     gap: 12px;
-    flex: 0 0 auto;
+    flex-shrink: 0;
     width: auto;
     max-width: 320px;
 }
 
-.logo .main-logo {
-    width: 58px;
-    height: 58px;
-    min-width: 58px;
-    min-height: 58px;
-    max-width: 58px;
-    max-height: 58px;
-    object-fit: contain;
-    display: block;
+.logo img {
+    width: 58px !important;
+    height: 58px !important;
+    max-width: 58px !important;
+    max-height: 58px !important;
+    min-width: 58px !important;
+    min-height: 58px !important;
+    object-fit: contain !important;
+    display: block !important;
+    flex: 0 0 58px !important;
 }
 
 .brand-name {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     line-height: 1.1;
 }
 
@@ -205,7 +198,6 @@ ul {
     font-size: 1.15rem;
     font-weight: 700;
     color: var(--green-dark);
-    white-space: nowrap;
 }
 
 .brand-name small {
@@ -215,7 +207,6 @@ ul {
     letter-spacing: 1.5px;
     text-transform: uppercase;
     margin-top: 4px;
-    white-space: nowrap;
 }
 
 
@@ -226,7 +217,6 @@ ul {
 .main-nav {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
     gap: 28px;
 }
 
@@ -270,7 +260,6 @@ ul {
     padding: 12px 20px;
     border-radius: 5px;
     transition: all 0.3s ease;
-    white-space: nowrap;
 }
 
 .nav-button:hover {
@@ -284,18 +273,17 @@ ul {
 
 
 /* =========================================================
-   MOBILE MENU BUTTON
+   MOBILE MENU
 ========================================================= */
 
 .menu-toggle {
     display: none;
     width: 44px;
     height: 44px;
-    padding: 8px;
     background: transparent;
     border: 1px solid var(--border);
     border-radius: 5px;
-    flex: 0 0 44px;
+    padding: 9px;
 }
 
 .menu-toggle span {
@@ -320,20 +308,18 @@ ul {
             #f7faf7 58%,
             #edf5ef 100%
         );
-
     padding: 95px 0;
     overflow: hidden;
 }
 
 .hero-content {
     display: grid;
-    grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+    grid-template-columns: 1.05fr 0.95fr;
     align-items: center;
     gap: 70px;
 }
 
 .hero-text {
-    width: 100%;
     max-width: 650px;
 }
 
@@ -346,7 +332,6 @@ ul {
 }
 
 .hero-description {
-    width: 100%;
     max-width: 610px;
     font-size: 1.08rem;
     color: var(--text);
@@ -356,29 +341,25 @@ ul {
 .hero-buttons {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     gap: 14px;
 }
 
 
 /* =========================================================
-   HERO / CLIENT IMAGES
+   HERO IMAGE
 ========================================================= */
 
-.hero-image,
-.legacy-image {
+.hero-image {
     width: 100%;
-}
-
-.client-photo {
-    width: 100%;
-    height: 560px;
-    object-fit: cover;
-    display: block;
 }
 
 .hero-image .client-photo {
+    width: 100%;
+    max-width: 650px;
     height: 560px;
+    object-fit: cover;
+    border-radius: 7px;
+    margin-left: auto;
 }
 
 
@@ -390,26 +371,13 @@ ul {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-
     min-height: 50px;
-
     padding: 13px 25px;
-
     border-radius: 5px;
-
     font-size: 0.9rem;
     font-weight: 700;
-
     border: 1px solid transparent;
-
-    text-align: center;
-
-    transition:
-        background 0.3s ease,
-        color 0.3s ease,
-        border-color 0.3s ease,
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .btn-primary {
@@ -420,8 +388,7 @@ ul {
 .btn-primary:hover {
     background: var(--green);
     transform: translateY(-2px);
-    box-shadow:
-        0 8px 20px rgba(22, 60, 44, 0.18);
+    box-shadow: 0 8px 20px rgba(22, 60, 44, 0.18);
 }
 
 .btn-outline {
@@ -438,6 +405,48 @@ ul {
 
 
 /* =========================================================
+   IMAGE PLACEHOLDERS
+========================================================= */
+
+.image-placeholder {
+    width: 100%;
+    min-height: 430px;
+    background:
+        linear-gradient(
+            135deg,
+            #edf5ef,
+            #f8faf8
+        );
+    border: 1px dashed var(--gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--green);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-align: center;
+    padding: 30px;
+}
+
+.client-placeholder {
+    min-height: 560px;
+}
+
+
+/* =========================================================
+   CLIENT IMAGES
+========================================================= */
+
+.client-photo {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+
+/* =========================================================
    PAGE HERO
 ========================================================= */
 
@@ -448,11 +457,8 @@ ul {
             var(--green-dark),
             var(--green)
         );
-
     color: var(--white);
-
     padding: 100px 0;
-
     text-align: center;
 }
 
@@ -475,14 +481,22 @@ ul {
 
 .page-hero p {
     max-width: 720px;
-    margin: 0 auto 28px;
+    margin: 0 auto;
     color: rgba(255, 255, 255, 0.86);
     font-size: 1.05rem;
 }
 
-.page-hero .btn {
-    margin-left: auto;
-    margin-right: auto;
+
+/* =========================================================
+   FINAL CTA BUTTON
+========================================================= */
+
+.final-cta-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 25px;
 }
 
 
@@ -496,7 +510,7 @@ ul {
 
 .about-grid {
     display: grid;
-    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    grid-template-columns: 0.9fr 1.1fr;
     align-items: center;
     gap: 75px;
 }
@@ -504,21 +518,21 @@ ul {
 .about-image {
     width: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 .about-logo-image {
-    width: 300px;
-    height: 300px;
-    max-width: 100%;
-    object-fit: contain;
-    display: block;
-    margin: 0 auto;
+    width: 300px !important;
+    height: 300px !important;
+    max-width: 100% !important;
+    max-height: 300px !important;
+    object-fit: contain !important;
+    display: block !important;
+    margin: 0 auto !important;
 }
 
 .about-content {
-    width: 100%;
     max-width: 680px;
 }
 
@@ -551,7 +565,7 @@ ul {
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 25px;
 }
 
@@ -561,8 +575,7 @@ ul {
     padding: 35px 28px;
     border-radius: 7px;
     transition: all 0.3s ease;
-    box-shadow:
-        0 5px 20px rgba(22, 60, 44, 0.04);
+    box-shadow: 0 5px 20px rgba(22, 60, 44, 0.04);
 }
 
 .service-card:hover {
@@ -576,13 +589,10 @@ ul {
     height: 58px;
     border-radius: 50%;
     background: var(--green-soft);
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     font-size: 1.65rem;
-
     margin-bottom: 22px;
 }
 
@@ -617,150 +627,6 @@ ul {
 
 
 /* =========================================================
-   WHY CHOOSE US
-========================================================= */
-
-.why-us {
-    background: var(--cream);
-}
-
-.why-grid {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 22px;
-}
-
-.why-card {
-    background: var(--white);
-    border: 1px solid var(--border);
-    border-radius: 7px;
-    padding: 30px 24px;
-    text-align: center;
-    transition: all 0.3s ease;
-}
-
-.why-card:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow);
-    border-color: var(--gold-light);
-}
-
-.why-icon {
-    width: 58px;
-    height: 58px;
-
-    margin: 0 auto 18px;
-
-    background: var(--green-soft);
-    border-radius: 50%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-size: 1.5rem;
-}
-
-.why-card h3 {
-    font-family: 'Playfair Display', serif;
-    color: var(--green-dark);
-    font-size: 1.25rem;
-    line-height: 1.3;
-    margin-bottom: 12px;
-}
-
-.why-card p {
-    color: var(--text);
-    font-size: 0.94rem;
-}
-
-.why-statement {
-    width: 100%;
-    max-width: 850px;
-
-    margin: 55px auto 0;
-
-    padding: 38px;
-
-    background: var(--green-dark);
-    color: var(--white);
-
-    text-align: center;
-
-    border-radius: 7px;
-}
-
-.why-statement h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(1.7rem, 3vw, 2.4rem);
-    margin-bottom: 8px;
-}
-
-.why-statement p {
-    color: rgba(255, 255, 255, 0.85);
-}
-
-
-/* =========================================================
-   PARTNERS
-========================================================= */
-
-.partners {
-    background: var(--white);
-}
-
-.partners-image {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.partners-image img {
-    width: 100%;
-    max-width: 900px;
-    height: auto;
-    margin: 0 auto;
-}
-
-
-/* =========================================================
-   BUILD YOUR LEGACY
-========================================================= */
-
-.legacy-section {
-    background: var(--cream);
-}
-
-.legacy-grid {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    align-items: center;
-    gap: 75px;
-}
-
-.legacy-image {
-    width: 100%;
-}
-
-.legacy-image .client-photo {
-    width: 100%;
-    height: 560px;
-    object-fit: cover;
-}
-
-.legacy-content {
-    width: 100%;
-    max-width: 650px;
-}
-
-.legacy-content p {
-    color: var(--text);
-    margin-bottom: 18px;
-}
-
-
-/* =========================================================
    SERVICE DETAIL
 ========================================================= */
 
@@ -774,7 +640,7 @@ ul {
 
 .service-detail-grid {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 75px;
 }
@@ -788,7 +654,6 @@ ul {
 }
 
 .service-detail-content {
-    width: 100%;
     max-width: 600px;
 }
 
@@ -826,6 +691,146 @@ ul {
 
 
 /* =========================================================
+   WHY CHOOSE US
+========================================================= */
+
+.why-us {
+    background: var(--cream);
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.why-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 7px;
+    padding: 30px 24px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.why-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow);
+    border-color: var(--gold-light);
+}
+
+.why-icon {
+    width: 58px;
+    height: 58px;
+    margin: 0 auto 18px;
+    background: var(--green-soft);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.why-card h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--green-dark);
+    font-size: 1.25rem;
+    line-height: 1.3;
+    margin-bottom: 12px;
+}
+
+.why-card p {
+    color: var(--text);
+    font-size: 0.94rem;
+}
+
+.why-statement {
+    max-width: 850px;
+    margin: 55px auto 0;
+    padding: 38px;
+    background: var(--green-dark);
+    color: var(--white);
+    text-align: center;
+    border-radius: 7px;
+}
+
+.why-statement h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.7rem, 3vw, 2.4rem);
+    margin-bottom: 8px;
+}
+
+.why-statement p {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+
+/* =========================================================
+   PARTNERS
+========================================================= */
+
+.partners {
+    background: var(--white);
+}
+
+.partners-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.partners-image img {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   BUILD YOUR LEGACY
+========================================================= */
+
+.legacy-section {
+    background: var(--cream);
+}
+
+.legacy-grid {
+    display: grid;
+    grid-template-columns: 0.95fr 1.05fr;
+    align-items: center;
+    gap: 75px;
+}
+
+.legacy-image {
+    width: 100%;
+}
+
+.legacy-image .client-photo {
+    width: 100%;
+    max-width: 600px;
+    height: 520px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.legacy-content {
+    max-width: 680px;
+}
+
+.legacy-content p {
+    color: var(--text);
+    margin-bottom: 18px;
+}
+
+.legacy-content .btn {
+    margin-top: 10px;
+}
+
+
+/* =========================================================
    ABOUT SERVICE LIST
 ========================================================= */
 
@@ -851,13 +856,12 @@ ul {
 
 .contact-grid {
     display: grid;
-    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    grid-template-columns: 0.9fr 1.1fr;
     gap: 70px;
     align-items: start;
 }
 
 .contact-content {
-    width: 100%;
     max-width: 560px;
 }
 
@@ -885,7 +889,6 @@ ul {
 .contact-item {
     padding: 18px 0;
     border-bottom: 1px solid var(--border);
-
     display: flex;
     flex-direction: column;
     gap: 4px;
@@ -958,20 +961,13 @@ ul {
 .form-group textarea,
 .form-group select {
     width: 100%;
-
     border: 1px solid var(--border);
-
     background: var(--white);
     color: var(--text-dark);
-
     padding: 13px 15px;
-
     border-radius: 4px;
-
     outline: none;
-
     font-size: 0.95rem;
-
     transition:
         border-color 0.3s ease,
         box-shadow 0.3s ease;
@@ -991,9 +987,7 @@ ul {
 .form-group textarea:focus,
 .form-group select:focus {
     border-color: var(--green);
-
-    box-shadow:
-        0 0 0 3px rgba(36, 92, 67, 0.08);
+    box-shadow: 0 0 0 3px rgba(36, 92, 67, 0.08);
 }
 
 .form-button {
@@ -1026,24 +1020,6 @@ ul {
     padding-bottom: 55px;
 }
 
-.footer-brand {
-    width: 100%;
-}
-
-.footer-main-logo {
-    width: 75px;
-    height: 75px;
-
-    min-width: 75px;
-    min-height: 75px;
-
-    max-width: 75px;
-    max-height: 75px;
-
-    object-fit: contain;
-    display: block;
-}
-
 .footer-brand h3 {
     font-family: 'Playfair Display', serif;
     font-size: 1.6rem;
@@ -1061,6 +1037,30 @@ ul {
     color: rgba(255, 255, 255, 0.7);
     max-width: 280px;
     margin-top: 15px;
+}
+
+.footer-main-logo {
+    width: 75px !important;
+    height: 75px !important;
+    max-width: 75px !important;
+    max-height: 75px !important;
+    min-width: 75px !important;
+    min-height: 75px !important;
+    object-fit: contain !important;
+    display: block !important;
+}
+
+.footer-logo-placeholder {
+    width: 70px;
+    height: 70px;
+    border: 1px solid var(--gold);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gold-light);
+    font-size: 0.65rem;
+    font-weight: 700;
 }
 
 .footer-column {
@@ -1099,10 +1099,10 @@ ul {
 
 
 /* =========================================================
-   TABLET
+   RESPONSIVE — TABLET
 ========================================================= */
 
-@media (max-width: 1100px) {
+@media (max-width: 1000px) {
 
     .main-nav {
         gap: 18px;
@@ -1110,66 +1110,35 @@ ul {
 
     .hero-content,
     .about-grid,
-    .legacy-grid,
     .contact-grid,
-    .service-detail-grid {
+    .service-detail-grid,
+    .legacy-grid {
         gap: 45px;
     }
 
-    .hero h1 {
-        font-size: clamp(2.8rem, 5vw, 4.4rem);
-    }
-
     .why-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .services-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .footer-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 
 /* =========================================================
-   MOBILE NAVIGATION
+   RESPONSIVE — MOBILE NAVIGATION
 ========================================================= */
 
 @media (max-width: 800px) {
 
-    /* HEADER */
-
     .nav-container {
         min-height: 78px;
-        width: 91%;
     }
-
-    .logo {
-        max-width: calc(100% - 60px);
-    }
-
-    .logo .main-logo {
-        width: 52px;
-        height: 52px;
-        min-width: 52px;
-        min-height: 52px;
-        max-width: 52px;
-        max-height: 52px;
-    }
-
-    .brand-name span {
-        font-size: 1.05rem;
-    }
-
-    .brand-name small {
-        font-size: 0.62rem;
-    }
-
-
-    /* HAMBURGER */
 
     .menu-toggle {
         display: block;
@@ -1177,31 +1146,22 @@ ul {
         z-index: 1002;
     }
 
-
-    /* MOBILE NAV */
-
     .main-nav {
         position: fixed;
-
         top: 78px;
         left: 0;
-
         width: 100%;
-
         background: var(--white);
-
         border-top: 1px solid var(--border);
         border-bottom: 1px solid var(--border);
 
         display: flex;
         flex-direction: column;
         align-items: stretch;
-
         gap: 0;
 
         max-height: 0;
         overflow: hidden;
-
         opacity: 0;
 
         transition:
@@ -1215,12 +1175,7 @@ ul {
     }
 
     .main-nav a {
-        display: block;
-
-        width: 100%;
-
         padding: 16px 6%;
-
         border-bottom: 1px solid var(--border);
     }
 
@@ -1230,161 +1185,63 @@ ul {
 
     .main-nav .nav-button {
         margin: 14px 6% 18px;
-        width: auto;
         text-align: center;
     }
 
 
     /* HERO */
 
-    .hero {
-        padding: 70px 0;
-    }
-
     .hero-content {
-        width: 100%;
         grid-template-columns: 1fr;
-        gap: 45px;
     }
 
     .hero-text {
-        width: 100%;
-        max-width: 680px;
-        margin-left: auto;
-        margin-right: auto;
+        max-width: 100%;
         text-align: center;
-    }
-
-    .hero h1 {
-        font-size: clamp(2.7rem, 9vw, 4rem);
+        margin: 0 auto;
     }
 
     .hero-description {
-        max-width: 650px;
         margin-left: auto;
         margin-right: auto;
     }
 
     .hero-buttons {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         justify-content: center;
-        gap: 12px;
-    }
-
-    .hero-buttons .btn {
-        width: auto;
-        min-width: 250px;
-        max-width: 350px;
-        margin-left: auto;
-        margin-right: auto;
+        align-items: center;
     }
 
     .hero-image {
-        width: 100%;
         max-width: 650px;
-        margin-left: auto;
-        margin-right: auto;
+        width: 100%;
+        margin: 0 auto;
     }
 
     .hero-image .client-photo {
+        margin: 0 auto;
+        width: 100%;
         height: 500px;
     }
 
 
     /* ABOUT */
 
-    .about-grid {
+    .about-grid,
+    .contact-grid,
+    .service-detail-grid,
+    .legacy-grid {
         grid-template-columns: 1fr;
-        gap: 45px;
-        text-align: center;
+    }
+
+    .about-content,
+    .contact-content,
+    .service-detail-content,
+    .legacy-content {
+        max-width: 100%;
     }
 
     .about-image {
-        width: 100%;
-        justify-content: center;
-    }
-
-    .about-logo-image {
-        width: 280px;
-        height: 280px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .about-content {
-        width: 100%;
-        max-width: 700px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .about-content .text-link {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-
-    /* SERVICES */
-
-    .services-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-
-    /* WHY */
-
-    .why-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-
-    /* PARTNERS */
-
-    .partners-image {
-        width: 100%;
-        padding: 0 10px;
-    }
-
-
-    /* LEGACY */
-
-    .legacy-grid {
-        grid-template-columns: 1fr;
-        gap: 45px;
-    }
-
-    .legacy-image {
-        width: 100%;
-        max-width: 650px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .legacy-image .client-photo {
-        height: 500px;
-    }
-
-    .legacy-content {
-        width: 100%;
-        max-width: 700px;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-    }
-
-    .legacy-content .btn {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-
-    /* SERVICE DETAIL */
-
-    .service-detail-grid {
-        grid-template-columns: 1fr;
+        margin: 0 auto;
     }
 
     .service-detail-grid.reverse .service-detail-content,
@@ -1396,136 +1253,102 @@ ul {
         order: -1;
     }
 
-    .service-detail-content {
+
+    /* LEGACY */
+
+    .legacy-image {
         width: 100%;
-        max-width: 700px;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto;
     }
 
-
-    /* CONTACT */
-
-    .contact-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .contact-content {
-        max-width: 700px;
-        margin-left: auto;
-        margin-right: auto;
+    .legacy-image .client-photo {
+        width: 100%;
+        height: 450px;
+        margin: 0 auto;
     }
 
 
     /* FOOTER */
 
     .footer-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: 1fr 1fr;
     }
 
 }
 
 
 /* =========================================================
-   SMALL MOBILE
+   RESPONSIVE — SMALL MOBILE
 ========================================================= */
 
 @media (max-width: 600px) {
 
     .container {
-        width: 91%;
+        width: min(91%, var(--container));
     }
 
     .section {
         padding: 70px 0;
     }
 
-
-    /* HEADER */
-
-    .nav-container {
-        width: 91%;
-        min-height: 74px;
-    }
-
-    .main-nav {
-        top: 74px;
-    }
-
-    .logo {
-        gap: 9px;
-        max-width: calc(100% - 55px);
-    }
-
-    .logo .main-logo {
-        width: 48px;
-        height: 48px;
-        min-width: 48px;
-        min-height: 48px;
-        max-width: 48px;
-        max-height: 48px;
-    }
-
-    .brand-name span {
-        font-size: 0.98rem;
-    }
-
-    .brand-name small {
-        font-size: 0.56rem;
-        letter-spacing: 1.2px;
-    }
-
-
-    /* HERO */
-
     .hero {
-        padding: 65px 0;
-    }
-
-    .hero-content {
-        gap: 40px;
+        padding: 70px 0;
     }
 
     .hero h1 {
-        font-size: 2.75rem;
+        font-size: 2.8rem;
     }
 
     .hero-description {
         font-size: 1rem;
     }
 
+
+    /* HERO BUTTONS */
+
     .hero-buttons {
+        flex-direction: column;
         width: 100%;
         align-items: center;
-        justify-content: center;
     }
 
     .hero-buttons .btn {
         width: 100%;
-        max-width: 350px;
-        min-width: 0;
-        margin-left: auto;
-        margin-right: auto;
+        max-width: 420px;
     }
 
-    .hero-image {
-        width: 100%;
-    }
+
+    /* HERO IMAGE */
 
     .hero-image .client-photo {
-        height: 380px;
+        height: 390px;
+        width: 100%;
+        object-fit: cover;
     }
 
 
-    /* ABOUT */
-
-    .about-grid {
-        gap: 35px;
-    }
+    /* ABOUT LOGO */
 
     .about-logo-image {
-        width: 240px;
-        height: 240px;
+        width: 250px !important;
+        height: 250px !important;
+        max-width: 250px !important;
+        max-height: 250px !important;
+        margin: 0 auto !important;
+    }
+
+
+    /* OTHER GRIDS */
+
+    .services-grid,
+    .why-grid,
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .section-heading {
+        margin-bottom: 40px;
     }
 
     .section-heading h2,
@@ -1534,70 +1357,6 @@ ul {
         font-size: 2.25rem;
     }
 
-
-    /* SERVICES */
-
-    .services-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .service-card {
-        padding: 28px 22px;
-        text-align: center;
-    }
-
-    .service-icon {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-
-    /* WHY */
-
-    .why-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .why-card {
-        padding: 28px 22px;
-    }
-
-
-    /* PARTNERS */
-
-    .partners-image {
-        padding: 0;
-    }
-
-    .partners-image img {
-        width: 100%;
-        height: auto;
-    }
-
-
-    /* LEGACY */
-
-    .legacy-grid {
-        gap: 35px;
-    }
-
-    .legacy-image .client-photo {
-        height: 380px;
-    }
-
-    .legacy-content {
-        text-align: center;
-    }
-
-    .legacy-content .btn {
-        width: 100%;
-        max-width: 350px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-
-    /* PAGE HERO */
 
     .page-hero {
         padding: 75px 0;
@@ -1608,13 +1367,6 @@ ul {
         font-size: 2.7rem;
     }
 
-    .page-hero .btn {
-        width: 100%;
-        max-width: 350px;
-    }
-
-
-    /* SERVICE DETAILS */
 
     .service-detail-content h2,
     .contact-content h2 {
@@ -1622,51 +1374,69 @@ ul {
     }
 
 
-    /* CONTACT */
+    .service-card,
+    .why-card {
+        padding: 28px 22px;
+    }
+
 
     .contact-form-container {
         padding: 25px 20px;
     }
 
 
-    /* WHY STATEMENT */
-
     .why-statement {
         padding: 30px 22px;
     }
 
 
-    /* FOOTER */
-
     .footer-grid {
-        grid-template-columns: 1fr;
         gap: 35px;
     }
 
-    .footer-brand {
-        text-align: center;
+
+    .brand-name span {
+        font-size: 1rem;
     }
 
-    .footer-main-logo {
-        margin-left: auto;
-        margin-right: auto;
+    .brand-name small {
+        font-size: 0.58rem;
     }
 
-    .footer-description {
-        margin-left: auto;
-        margin-right: auto;
+
+    /* LEGACY IMAGE */
+
+    .legacy-image .client-photo {
+        height: 390px;
+        width: 100%;
     }
 
-    .footer-column {
-        align-items: center;
-        text-align: center;
+
+    /* LEGACY BUTTON */
+
+    .legacy-content .btn {
+        width: 100%;
+        max-width: 420px;
+    }
+
+
+    /* FINAL CTA */
+
+    .final-cta-button {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .final-cta-button .btn {
+        width: 100%;
+        max-width: 420px;
     }
 
 }
 
 
 /* =========================================================
-   VERY SMALL PHONES
+   VERY SMALL SCREENS
 ========================================================= */
 
 @media (max-width: 380px) {
@@ -1691,12 +1461,28 @@ ul {
         font-size: 2.1rem;
     }
 
+
+    .logo {
+        gap: 8px;
+    }
+
+    .logo img {
+        width: 52px !important;
+        height: 52px !important;
+        max-width: 52px !important;
+        max-height: 52px !important;
+        min-width: 52px !important;
+        min-height: 52px !important;
+        flex-basis: 52px !important;
+    }
+
     .brand-name span {
-        font-size: 0.9rem;
+        font-size: 0.92rem;
     }
 
     .brand-name small {
-        font-size: 0.5rem;
+        font-size: 0.52rem;
+        letter-spacing: 1px;
     }
 
 }
