@@ -308,6 +308,7 @@ ul {
             #f7faf7 58%,
             #edf5ef 100%
         );
+
     padding: 95px 0;
     overflow: hidden;
 }
@@ -411,16 +412,20 @@ ul {
 .image-placeholder {
     width: 100%;
     min-height: 430px;
+
     background:
         linear-gradient(
             135deg,
             #edf5ef,
             #f8faf8
         );
+
     border: 1px dashed var(--gold);
+
     display: flex;
     align-items: center;
     justify-content: center;
+
     color: var(--green);
     font-size: 0.85rem;
     font-weight: 700;
@@ -457,6 +462,7 @@ ul {
             var(--green-dark),
             var(--green)
         );
+
     color: var(--white);
     padding: 100px 0;
     text-align: center;
@@ -584,23 +590,57 @@ ul {
     border-color: var(--gold-light);
 }
 
+
+/* =========================================================
+   SERVICE ICON CONTAINER
+========================================================= */
+
 .service-icon {
-    width: 58px;
-    height: 58px;
+    width: 62px;
+    height: 62px;
+
     border-radius: 50%;
     background: var(--green-soft);
+
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.65rem;
+
     margin-bottom: 22px;
+
+    overflow: hidden;
+    flex-shrink: 0;
 }
+
+
+/* PNG SERVICE ICONS */
+
+.service-icon-image {
+    width: 36px !important;
+    height: 36px !important;
+    max-width: 36px !important;
+    max-height: 36px !important;
+
+    object-fit: contain !important;
+    display: block !important;
+}
+
 
 .service-icon.large {
     width: 72px;
     height: 72px;
-    font-size: 2rem;
 }
+
+
+/* LARGE PNG ICON */
+
+.service-icon.large .service-icon-image {
+    width: 43px !important;
+    height: 43px !important;
+    max-width: 43px !important;
+    max-height: 43px !important;
+}
+
 
 .service-card h3 {
     font-family: 'Playfair Display', serif;
@@ -719,17 +759,40 @@ ul {
     border-color: var(--gold-light);
 }
 
+
+/* =========================================================
+   WHY CHOOSE US ICON
+========================================================= */
+
 .why-icon {
-    width: 58px;
-    height: 58px;
+    width: 62px;
+    height: 62px;
+
     margin: 0 auto 18px;
+
     background: var(--green-soft);
     border-radius: 50%;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.5rem;
+
+    overflow: hidden;
 }
+
+
+/* CHECK ICON PNG */
+
+.why-icon-image {
+    width: 34px !important;
+    height: 34px !important;
+    max-width: 34px !important;
+    max-height: 34px !important;
+
+    object-fit: contain !important;
+    display: block !important;
+}
+
 
 .why-card h3 {
     font-family: 'Playfair Display', serif;
@@ -968,6 +1031,7 @@ ul {
     border-radius: 4px;
     outline: none;
     font-size: 0.95rem;
+
     transition:
         border-color 0.3s ease,
         box-shadow 0.3s ease;
@@ -1055,9 +1119,11 @@ ul {
     height: 70px;
     border: 1px solid var(--gold);
     border-radius: 50%;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
     color: var(--gold-light);
     font-size: 0.65rem;
     font-weight: 700;
@@ -1150,8 +1216,11 @@ ul {
         position: fixed;
         top: 78px;
         left: 0;
+
         width: 100%;
+
         background: var(--white);
+
         border-top: 1px solid var(--border);
         border-bottom: 1px solid var(--border);
 
@@ -1224,7 +1293,7 @@ ul {
     }
 
 
-    /* ABOUT */
+    /* ABOUT / CONTACT / LEGACY */
 
     .about-grid,
     .contact-grid,
@@ -1273,7 +1342,6 @@ ul {
     .footer-grid {
         grid-template-columns: 1fr 1fr;
     }
-
 }
 
 
@@ -1351,6 +1419,7 @@ ul {
         margin-bottom: 40px;
     }
 
+
     .section-heading h2,
     .about-content h2,
     .legacy-content h2 {
@@ -1377,6 +1446,29 @@ ul {
     .service-card,
     .why-card {
         padding: 28px 22px;
+    }
+
+
+    /* ICONS */
+
+    .service-icon,
+    .why-icon {
+        width: 58px;
+        height: 58px;
+    }
+
+    .service-icon-image {
+        width: 33px !important;
+        height: 33px !important;
+        max-width: 33px !important;
+        max-height: 33px !important;
+    }
+
+    .why-icon-image {
+        width: 31px !important;
+        height: 31px !important;
+        max-width: 31px !important;
+        max-height: 31px !important;
     }
 
 
@@ -1431,7 +1523,6 @@ ul {
         width: 100%;
         max-width: 420px;
     }
-
 }
 
 
@@ -1484,23 +1575,27 @@ ul {
         font-size: 0.52rem;
         letter-spacing: 1px;
     }
-/* =========================================================
-   GREEN CHECK ICONS
-========================================================= */
 
-.service-check-icon,
-.why-check-icon {
-    color: var(--green) !important;
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 700;
-    line-height: 1;
-}
 
-.service-check-icon {
-    font-size: 1.8rem;
-}
+    /* SMALL ICONS */
 
-.why-check-icon {
-    font-size: 1.7rem;
-}
+    .service-icon,
+    .why-icon {
+        width: 55px;
+        height: 55px;
+    }
+
+    .service-icon-image {
+        width: 31px !important;
+        height: 31px !important;
+        max-width: 31px !important;
+        max-height: 31px !important;
+    }
+
+    .why-icon-image {
+        width: 29px !important;
+        height: 29px !important;
+        max-width: 29px !important;
+        max-height: 29px !important;
+    }
 }
