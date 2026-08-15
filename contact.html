@@ -16,7 +16,7 @@
 
     <meta
         name="description"
-        content="Contact Genesis & Co. Legacy Services for Life Insurance, Health Insurance, Real Estate, Tax Preparation, and Notary Services."
+        content="Contact Genesis & Co. Legacy Services for Life Insurance, Health Insurance, Real Estate, Tax Preparation, and Remote Notary Services."
     >
 
     <!-- GOOGLE FONTS -->
@@ -59,11 +59,10 @@
     <div class="container nav-container">
 
 
-        <!-- HEADER LOGO -->
-
         <a
             href="index.html"
             class="logo"
+            aria-label="Genesis & Co. Legacy Services Home"
         >
 
             <img
@@ -87,7 +86,6 @@
         </a>
 
 
-        <!-- MOBILE MENU -->
 
         <button
             class="menu-toggle"
@@ -104,11 +102,11 @@
         </button>
 
 
-        <!-- NAVIGATION -->
 
         <nav
             class="main-nav"
             id="mainNav"
+            aria-label="Main navigation"
         >
 
             <a href="index.html">
@@ -135,10 +133,12 @@
             </a>
 
             <a
-                href="contact.html"
+                href="https://calendly.com/genesislegacyservices/initial-consultation"
                 class="nav-button"
+                target="_blank"
+                rel="noopener noreferrer"
             >
-                Get Started
+                Book Consultation
             </a>
 
         </nav>
@@ -164,15 +164,17 @@
             CONTACT GENESIS & CO.
         </p>
 
+
         <h1>
 
-            Let's Protect Your Future.
+            Protect Your Legacy.
 
             <span>
-                Together.
+                Empower Your Future.
             </span>
 
         </h1>
+
 
         <p>
 
@@ -196,30 +198,24 @@
     <div class="container about-grid">
 
 
-        <!-- GENESIS LOGO -->
-
         <div class="about-image">
 
-            <div class="contact-logo">
-
-                <img
-                    src="genesis-logo.png"
-                    alt="Genesis & Co. Legacy Services Logo"
-                    class="contact-logo-image"
-                >
-
-            </div>
+            <img
+                src="genesis-logo.png"
+                alt="Genesis & Co. Legacy Services"
+                class="about-logo-image"
+            >
 
         </div>
 
 
-        <!-- CONTACT INFORMATION -->
 
         <div class="about-content">
 
             <p class="section-label">
                 GET IN TOUCH
             </p>
+
 
             <h2>
 
@@ -231,38 +227,36 @@
 
             </h2>
 
+
             <p>
 
                 Whether you're interested in insurance,
-                real estate, tax preparation, notary services,
-                or simply have a question, we would love to
-                hear from you.
+                real estate, tax preparation, remote notary
+                services, or simply have a question,
+                we would love to hear from you.
 
             </p>
+
 
             <p>
 
                 Contact Genesis & Co. Legacy Services today
                 and let's discuss how we can help you protect
-                what matters, prepare for tomorrow, and build
+                your future, prepare for tomorrow, and build
                 a lasting legacy.
 
             </p>
 
 
-            <!-- PHONE -->
 
-            <div class="contact-detail">
+            <div class="contact-details">
 
-                <div class="why-icon">
-                    📞
-                </div>
 
-                <div>
+                <div class="contact-item">
 
-                    <h3>
+                    <strong>
                         Phone
-                    </h3>
+                    </strong>
 
                     <a href="tel:9104451813">
                         910-445-1813
@@ -270,22 +264,13 @@
 
                 </div>
 
-            </div>
 
 
-            <!-- EMAIL -->
+                <div class="contact-item">
 
-            <div class="contact-detail">
-
-                <div class="why-icon">
-                    ✉️
-                </div>
-
-                <div>
-
-                    <h3>
+                    <strong>
                         Email
-                    </h3>
+                    </strong>
 
                     <a href="mailto:kamaiesha618@gmail.com">
                         kamaiesha618@gmail.com
@@ -304,10 +289,13 @@
 
 
 <!-- =====================================================
-     CONTACT FORM
+     FORMSPREE CONTACT FORM
 ===================================================== -->
 
-<section class="services section">
+<section
+    class="services section"
+    id="contact-form"
+>
 
     <div class="container">
 
@@ -315,8 +303,9 @@
         <div class="section-heading">
 
             <p class="section-label">
-                SEND US A MESSAGE
+                GET STARTED
             </p>
+
 
             <h2>
 
@@ -328,20 +317,21 @@
 
             </h2>
 
+
             <p>
 
                 Complete the form below and a member of
-                Genesis & Co. Legacy Services will get back
-                to you.
+                Genesis & Co. Legacy Services will get
+                back to you.
 
             </p>
 
         </div>
 
 
-        <!-- FORMSPREE FORM -->
 
         <div class="contact-form-wrapper">
+
 
             <form
                 action="https://formspree.io/f/mdendknw"
@@ -370,6 +360,7 @@
                 </div>
 
 
+
                 <!-- EMAIL -->
 
                 <div class="form-group">
@@ -390,6 +381,7 @@
                 </div>
 
 
+
                 <!-- PHONE -->
 
                 <div class="form-group">
@@ -407,6 +399,7 @@
                     >
 
                 </div>
+
 
 
                 <!-- SERVICE -->
@@ -443,8 +436,8 @@
                             Tax Preparation
                         </option>
 
-                        <option value="Notary Services">
-                            Notary Services
+                        <option value="Remote Notary">
+                            Remote Notary
                         </option>
 
                         <option value="General Question">
@@ -454,6 +447,7 @@
                     </select>
 
                 </div>
+
 
 
                 <!-- MESSAGE -->
@@ -475,7 +469,6 @@
                 </div>
 
 
-                <!-- HIDDEN SUBJECT -->
 
                 <input
                     type="hidden"
@@ -484,18 +477,14 @@
                 >
 
 
-                <!-- SUBMIT -->
 
-                <div class="form-submit">
+                <button
+                    type="submit"
+                    class="btn btn-primary form-button"
+                >
+                    Send Message
+                </button>
 
-                    <button
-                        type="submit"
-                        class="btn btn-primary"
-                    >
-                        Send Message
-                    </button>
-
-                </div>
 
             </form>
 
@@ -508,7 +497,7 @@
 
 
 <!-- =====================================================
-     OUR SERVICES
+     HOW WE CAN HELP
 ===================================================== -->
 
 <section class="services section">
@@ -522,6 +511,7 @@
                 HOW WE CAN HELP
             </p>
 
+
             <h2>
 
                 Professional Services.
@@ -532,15 +522,17 @@
 
             </h2>
 
+
             <p>
 
-                We offer a range of professional services
-                designed to help individuals and families
-                protect, prepare, and build their legacy.
+                We offer professional services designed to
+                help individuals and families protect,
+                prepare, and build their legacy.
 
             </p>
 
         </div>
+
 
 
         <div class="services-grid">
@@ -551,7 +543,13 @@
             <article class="service-card">
 
                 <div class="service-icon">
-                    🛡️
+
+                    <img
+                        src="life-insurance-icon.png"
+                        alt=""
+                        class="service-icon-image"
+                    >
+
                 </div>
 
                 <h3>
@@ -560,9 +558,10 @@
 
                 <p>
 
-                    Explore coverage options designed to help
-                    protect the people and financial goals
-                    that matter most.
+                    Protect your loved ones with affordable
+                    life insurance solutions including Term Life,
+                    Whole Life, Final Expense, Children's Life
+                    Insurance, and Mortgage Protection.
 
                 </p>
 
@@ -579,7 +578,13 @@
             <article class="service-card">
 
                 <div class="service-icon">
-                    ❤️
+
+                    <img
+                        src="health-insurance-icon.png"
+                        alt=""
+                        class="service-icon-image"
+                    >
+
                 </div>
 
                 <h3>
@@ -588,8 +593,9 @@
 
                 <p>
 
-                    Get guidance as you explore health coverage
-                    options for yourself or your family.
+                    Find affordable ACA or Medicare plans —
+                    most people qualify for $0–low monthly
+                    options. Virtual help made simple.
 
                 </p>
 
@@ -606,7 +612,13 @@
             <article class="service-card">
 
                 <div class="service-icon">
-                    🏡
+
+                    <img
+                        src="real-estate-icon.png"
+                        alt=""
+                        class="service-icon-image"
+                    >
+
                 </div>
 
                 <h3>
@@ -633,7 +645,13 @@
             <article class="service-card">
 
                 <div class="service-icon">
-                    📋
+
+                    <img
+                        src="tax-preparation-icon.png"
+                        alt=""
+                        class="service-icon-image"
+                    >
+
                 </div>
 
                 <h3>
@@ -642,8 +660,9 @@
 
                 <p>
 
-                    Convenient and professional tax preparation
-                    services with personalized attention.
+                    Personal Tax Returns, Small Business Taxes,
+                    Tax Planning, Electronic Filing,
+                    and Refund Assistance.
 
                 </p>
 
@@ -655,23 +674,29 @@
 
 
 
-            <!-- NOTARY SERVICES -->
+            <!-- REMOTE NOTARY -->
 
             <article class="service-card">
 
                 <div class="service-icon">
-                    ✍🏽
+
+                    <img
+                        src="notary-services-icon.png"
+                        alt=""
+                        class="service-icon-image"
+                    >
+
                 </div>
 
                 <h3>
-                    Notary Services
+                    Remote Notary
                 </h3>
 
                 <p>
 
-                    Professional notary services designed to
-                    make document notarization convenient and
-                    straightforward.
+                    Fast and secure online notarization for
+                    Real Estate Documents, Power of Attorney,
+                    Affidavits, and Legal Documents.
 
                 </p>
 
@@ -705,6 +730,7 @@
                 WHY CHOOSE US
             </p>
 
+
             <h2>
 
                 Your Needs.
@@ -715,25 +741,32 @@
 
             </h2>
 
+
             <p>
 
-                We're committed to making professional services
-                convenient, understandable, and personal.
+                We're committed to making professional
+                services convenient, understandable,
+                and personal.
 
             </p>
 
         </div>
 
 
+
         <div class="why-grid">
 
-
-            <!-- VIRTUAL SERVICES -->
 
             <div class="why-card">
 
                 <div class="why-icon">
-                    💚
+
+                    <img
+                        src="check-icon.png"
+                        alt=""
+                        class="why-icon-image"
+                    >
+
                 </div>
 
                 <h3>
@@ -743,8 +776,7 @@
                 <p>
 
                     From the comfort and privacy of your own home,
-                    you can complete most of the process virtually—
-                    saving you time, travel, and unnecessary stress.
+                    you can complete most of the process virtually.
 
                 </p>
 
@@ -752,12 +784,16 @@
 
 
 
-            <!-- LICENSED -->
-
             <div class="why-card">
 
                 <div class="why-icon">
-                    🛡️
+
+                    <img
+                        src="check-icon.png"
+                        alt=""
+                        class="why-icon-image"
+                    >
+
                 </div>
 
                 <h3>
@@ -766,9 +802,8 @@
 
                 <p>
 
-                    You can feel confident knowing you're working
-                    with a licensed and insured professional who
-                    takes your needs seriously.
+                    You can feel confident knowing you're
+                    working with a licensed and insured professional.
 
                 </p>
 
@@ -776,12 +811,16 @@
 
 
 
-            <!-- PROFESSIONAL -->
-
             <div class="why-card">
 
                 <div class="why-icon">
-                    💼
+
+                    <img
+                        src="check-icon.png"
+                        alt=""
+                        class="why-icon-image"
+                    >
+
                 </div>
 
                 <h3>
@@ -791,8 +830,7 @@
                 <p>
 
                     We're committed to providing reliable guidance
-                    and helping you understand your options so you
-                    can make informed decisions.
+                    so you can make informed decisions.
 
                 </p>
 
@@ -800,12 +838,16 @@
 
 
 
-            <!-- FRIENDLY -->
-
             <div class="why-card">
 
                 <div class="why-icon">
-                    🤝
+
+                    <img
+                        src="check-icon.png"
+                        alt=""
+                        class="why-icon-image"
+                    >
+
                 </div>
 
                 <h3>
@@ -814,19 +856,17 @@
 
                 <p>
 
-                    We believe insurance should feel less complicated
-                    and more personal. We're here to answer your
-                    questions, listen to your needs, and make the
-                    process as comfortable as possible.
+                    We listen to your needs, answer your questions,
+                    and make the process as comfortable as possible.
 
                 </p>
 
             </div>
 
+
         </div>
 
 
-        <!-- FINAL STATEMENT -->
 
         <div class="why-statement">
 
@@ -847,7 +887,7 @@
 
 
 <!-- =====================================================
-     FINAL CALL TO ACTION
+     FINAL CTA
 ===================================================== -->
 
 <section class="page-hero">
@@ -855,44 +895,49 @@
     <div class="container">
 
         <p class="section-label">
-            GENESIS & CO. LEGACY SERVICES
+            READY TO GET STARTED?
         </p>
+
 
         <h2>
 
-            Protect What Matters.
+            Protect Your Legacy.
 
             <span>
-                Build What Lasts.
+                Empower Your Future.
             </span>
 
         </h2>
 
+
         <p>
 
-            Your future matters.
-            Your family matters.
-            Your legacy matters.
+            Complete our contact form or schedule
+            your free consultation today.
 
         </p>
 
-        <br>
+
+        <div class="cta-buttons">
+
+            <a
+                href="#contact-form"
+                class="btn btn-primary"
+            >
+                Get Started
+            </a>
 
 
-        <a
-            href="tel:9104451813"
-            class="btn btn-primary"
-        >
-            Call 910-445-1813
-        </a>
+            <a
+                href="https://calendly.com/genesislegacyservices/initial-consultation"
+                class="btn btn-outline btn-light-outline"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Book Your Free Consultation
+            </a>
 
-
-        <a
-            href="mailto:kamaiesha618@gmail.com"
-            class="btn btn-outline"
-        >
-            Email Us
-        </a>
+        </div>
 
     </div>
 
@@ -912,13 +957,11 @@
     <div class="container footer-grid">
 
 
-        <!-- FOOTER BRAND -->
-
         <div class="footer-brand">
 
             <img
-                src="genesis-logo.png"
-                alt="Genesis & Co. Legacy Services Logo"
+                src="genesis-logo-footer.png"
+                alt="Genesis & Co. Legacy Services"
                 class="footer-main-logo"
             >
 
@@ -932,16 +975,14 @@
 
             <p class="footer-description">
 
-                Protecting your future starts with making
-                informed decisions today.
+                Protecting your future starts with
+                making informed decisions today.
 
             </p>
 
         </div>
 
 
-
-        <!-- SERVICES -->
 
         <div class="footer-column">
 
@@ -966,14 +1007,12 @@
             </a>
 
             <a href="services.html#notary-services">
-                Notary Services
+                Remote Notary
             </a>
 
         </div>
 
 
-
-        <!-- QUICK LINKS -->
 
         <div class="footer-column">
 
@@ -1005,8 +1044,6 @@
 
 
 
-        <!-- CONTACT -->
-
         <div class="footer-column">
 
             <h4>
@@ -1026,8 +1063,6 @@
     </div>
 
 
-
-    <!-- COPYRIGHT -->
 
     <div class="footer-bottom">
 
@@ -1051,129 +1086,6 @@
 
 </footer>
 
-
-
-<!-- =====================================================
-     CONTACT LOGO / FORM STYLING
-===================================================== -->
-
-<style>
-
-    .contact-logo {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-    }
-
-
-    .contact-logo-image {
-        width: 250px !important;
-        height: 250px !important;
-        max-width: 100% !important;
-        max-height: 250px !important;
-        object-fit: contain !important;
-        display: block !important;
-        margin: 0 auto !important;
-    }
-
-
-    .footer-main-logo {
-        width: 75px !important;
-        height: 75px !important;
-        max-width: 75px !important;
-        max-height: 75px !important;
-        object-fit: contain !important;
-        display: block !important;
-    }
-
-
-    .contact-form-wrapper {
-        width: 100%;
-        max-width: 850px;
-        margin: 40px auto 0;
-    }
-
-
-    .contact-form {
-        width: 100%;
-        padding: 35px;
-        background: rgba(255, 255, 255, 0.96);
-        border-radius: 12px;
-        box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
-    }
-
-
-    .form-group {
-        margin-bottom: 22px;
-    }
-
-
-    .form-group label {
-        display: block;
-        margin-bottom: 8px;
-        font-weight: 600;
-    }
-
-
-    .form-group input,
-    .form-group select,
-    .form-group textarea {
-        width: 100%;
-        padding: 14px 16px;
-        border: 1px solid #d8d8d8;
-        border-radius: 6px;
-        font-family: 'DM Sans', sans-serif;
-        font-size: 1rem;
-        outline: none;
-        transition: border-color 0.2s ease, box-shadow 0.2s ease;
-    }
-
-
-    .form-group input:focus,
-    .form-group select:focus,
-    .form-group textarea:focus {
-        border-color: #b99a45;
-        box-shadow: 0 0 0 3px rgba(185, 154, 69, 0.12);
-    }
-
-
-    .form-group textarea {
-        resize: vertical;
-        min-height: 160px;
-    }
-
-
-    .form-submit {
-        text-align: center;
-        margin-top: 10px;
-    }
-
-
-    .form-submit .btn {
-        border: none;
-        cursor: pointer;
-    }
-
-
-    @media (max-width: 768px) {
-
-        .contact-form {
-            padding: 25px 20px;
-        }
-
-        .contact-logo-image {
-            width: 200px !important;
-            height: 200px !important;
-        }
-
-    }
-
-</style>
-
-
-
-<!-- JAVASCRIPT -->
 
 <script src="js/script.js"></script>
 
