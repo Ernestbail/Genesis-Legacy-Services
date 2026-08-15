@@ -10,176 +10,197 @@ document.addEventListener("DOMContentLoaded", function () {
        MOBILE NAVIGATION
     ===================================================== */
 
-    const menuToggle = document.getElementById("menuToggle");
-    const mainNav = document.getElementById("mainNav");
+    const menuToggle =
+        document.getElementById("menuToggle");
+
+    const mainNav =
+        document.getElementById("mainNav");
+
 
     if (menuToggle && mainNav) {
 
-        menuToggle.addEventListener("click", function () {
+        menuToggle.addEventListener(
+            "click",
+            function () {
 
-            const isOpen = mainNav.classList.toggle("active");
+                const isOpen =
+                    mainNav.classList.toggle("active");
 
-            menuToggle.setAttribute(
-                "aria-expanded",
-                isOpen ? "true" : "false"
-            );
+                menuToggle.setAttribute(
+                    "aria-expanded",
+                    isOpen ? "true" : "false"
+                );
 
-        });
+            }
+        );
 
 
-        /* Close menu when a navigation link is clicked */
+        const navLinks =
+            mainNav.querySelectorAll("a");
 
-        const navLinks = mainNav.querySelectorAll("a");
 
         navLinks.forEach(function (link) {
 
-            link.addEventListener("click", function () {
+            link.addEventListener(
+                "click",
+                function () {
 
-                mainNav.classList.remove("active");
+                    mainNav.classList.remove("active");
 
-                menuToggle.setAttribute(
-                    "aria-expanded",
-                    "false"
-                );
+                    menuToggle.setAttribute(
+                        "aria-expanded",
+                        "false"
+                    );
 
-            });
-
-        });
-
-
-        /* Close menu when clicking outside */
-
-        document.addEventListener("click", function (event) {
-
-            const clickedInsideMenu =
-                mainNav.contains(event.target);
-
-            const clickedMenuButton =
-                menuToggle.contains(event.target);
-
-            if (
-                !clickedInsideMenu &&
-                !clickedMenuButton &&
-                mainNav.classList.contains("active")
-            ) {
-
-                mainNav.classList.remove("active");
-
-                menuToggle.setAttribute(
-                    "aria-expanded",
-                    "false"
-                );
-
-            }
-
-        });
-
-    }
-
-
-    /* =====================================================
-       CLOSE MOBILE MENU WHEN SCREEN GETS LARGER
-    ===================================================== */
-
-    window.addEventListener("resize", function () {
-
-        if (
-            window.innerWidth > 800 &&
-            mainNav &&
-            menuToggle
-        ) {
-
-            mainNav.classList.remove("active");
-
-            menuToggle.setAttribute(
-                "aria-expanded",
-                "false"
+                }
             );
 
-        }
-
-    });
-
-
-    /* =====================================================
-       SMOOTH SCROLL FOR INTERNAL LINKS
-    ===================================================== */
-
-    const internalLinks =
-        document.querySelectorAll('a[href^="#"]');
-
-    internalLinks.forEach(function (link) {
-
-        link.addEventListener("click", function (event) {
-
-            const targetId =
-                this.getAttribute("href");
-
-            if (
-                targetId &&
-                targetId !== "#"
-            ) {
-
-                const target =
-                    document.querySelector(targetId);
-
-                if (target) {
-
-                    event.preventDefault();
-
-                    target.scrollIntoView({
-                        behavior: "smooth",
-                        block: "start"
-                    });
-
-                }
-
-            }
-
         });
 
-    });
 
-
-    /* =====================================================
-       CONTACT FORM
-    ===================================================== */
-
-    const contactForm =
-        document.getElementById("contactForm");
-
-    if (contactForm) {
-
-        contactForm.addEventListener(
-            "submit",
+        document.addEventListener(
+            "click",
             function (event) {
 
-                /*
-                    The form is currently prevented from
-                    submitting until we connect it to an
-                    email service or backend.
-                */
+                const clickedInsideMenu =
+                    mainNav.contains(event.target);
 
-                event.preventDefault();
+                const clickedMenuButton =
+                    menuToggle.contains(event.target);
 
-                const formMessage =
-                    document.getElementById("formMessage");
 
-                if (formMessage) {
+                if (
+                    !clickedInsideMenu &&
+                    !clickedMenuButton &&
+                    mainNav.classList.contains("active")
+                ) {
 
-                    formMessage.textContent =
-                        "Thank you! Your message has been received.";
+                    mainNav.classList.remove("active");
 
-                    formMessage.style.display = "block";
+                    menuToggle.setAttribute(
+                        "aria-expanded",
+                        "false"
+                    );
 
                 }
-
-                contactForm.reset();
 
             }
         );
 
     }
+
+
+
+    /* =====================================================
+       CLOSE MENU ON LARGE SCREEN
+    ===================================================== */
+
+    window.addEventListener(
+        "resize",
+        function () {
+
+            if (
+                window.innerWidth > 800 &&
+                mainNav &&
+                menuToggle
+            ) {
+
+                mainNav.classList.remove("active");
+
+                menuToggle.setAttribute(
+                    "aria-expanded",
+                    "false"
+                );
+
+            }
+
+        }
+    );
+
+
+
+    /* =====================================================
+       SMOOTH SCROLL
+    ===================================================== */
+
+    const internalLinks =
+        document.querySelectorAll('a[href^="#"]');
+
+
+    internalLinks.forEach(function (link) {
+
+        link.addEventListener(
+            "click",
+            function (event) {
+
+                const targetId =
+                    this.getAttribute("href");
+
+
+                if (
+                    targetId &&
+                    targetId !== "#"
+                ) {
+
+                    const target =
+                        document.querySelector(targetId);
+
+
+                    if (target) {
+
+                        event.preventDefault();
+
+                        target.scrollIntoView({
+                            behavior: "smooth",
+                            block: "start"
+                        });
+
+                    }
+
+                }
+
+            }
+        );
+
+    });
+
+
+
+    /* =====================================================
+       REVIEW FORM
+       Formspree handles the actual submission.
+    ===================================================== */
+
+    const reviewForm =
+        document.getElementById("reviewForm");
+
+
+    if (reviewForm) {
+
+        reviewForm.addEventListener(
+            "submit",
+            function () {
+
+                const submitButton =
+                    reviewForm.querySelector(
+                        ".review-submit"
+                    );
+
+
+                if (submitButton) {
+
+                    submitButton.textContent =
+                        "Submitting Review...";
+
+                    submitButton.disabled = true;
+
+                }
+
+            }
+        );
+
+    }
+
 
 
     /* =====================================================
@@ -188,6 +209,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const yearElement =
         document.getElementById("currentYear");
+
 
     if (yearElement) {
 
