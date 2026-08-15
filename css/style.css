@@ -732,19 +732,6 @@ ul {
     font-size: 0.82rem;
 }
 
-.review-status {
-    display: inline-flex;
-    padding: 6px 10px;
-    border-radius: 20px;
-    font-size: 0.72rem;
-    font-weight: 700;
-}
-
-.sample-status {
-    color: var(--green);
-    background: var(--green-soft);
-}
-
 
 /* =========================================================
    REVIEW FORM
