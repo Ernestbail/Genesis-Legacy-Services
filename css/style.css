@@ -1,3 +1,4 @@
+```css
 /* =========================================================
    GENESIS & CO. LEGACY SERVICES
    MAIN STYLESHEET
@@ -132,7 +133,9 @@ ul {
 .hero h1 span,
 .page-hero h1 span,
 .page-hero h2 span,
-.service-detail-content h2 span {
+.service-detail-content h2 span,
+.client-feature-content h2 span,
+.legacy-content h2 span {
     color: var(--gold);
 }
 
@@ -203,6 +206,7 @@ ul {
     text-transform: uppercase;
     margin-top: 4px;
 }
+
 
 /* =========================================================
    NAVIGATION
@@ -377,6 +381,17 @@ ul {
     background: var(--green-dark);
     color: var(--white);
     transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   CLIENT PHOTOS
+========================================================= */
+
+.client-photo {
+    width: 100%;
+    display: block;
+    object-fit: cover;
 }
 
 
@@ -569,6 +584,57 @@ ul {
 
 
 /* =========================================================
+   CLIENT FEATURE
+========================================================= */
+
+.client-feature {
+    background: var(--white);
+}
+
+.client-feature-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 75px;
+}
+
+.client-feature-image {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+.client-feature-image .client-photo {
+    width: 100%;
+    height: 560px;
+    object-fit: cover;
+    display: block;
+}
+
+.client-feature-content {
+    max-width: 620px;
+}
+
+.client-feature-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.1rem, 4vw, 3.3rem);
+    line-height: 1.2;
+    color: var(--green-dark);
+    margin-bottom: 22px;
+}
+
+.client-feature-content p {
+    color: var(--text);
+    margin-bottom: 18px;
+}
+
+.client-feature-content .btn {
+    margin-top: 10px;
+}
+
+
+/* =========================================================
    SERVICE DETAIL
 ========================================================= */
 
@@ -735,6 +801,52 @@ ul {
     font-size: 0.72rem;
     font-weight: 700;
     letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   BUILD YOUR LEGACY
+========================================================= */
+
+.legacy-section {
+    background: var(--cream);
+}
+
+.legacy-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 75px;
+}
+
+.legacy-image {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+.legacy-image .client-photo {
+    width: 100%;
+    height: 560px;
+    object-fit: cover;
+}
+
+.legacy-content {
+    max-width: 620px;
+}
+
+.legacy-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.1rem, 4vw, 3.3rem);
+    line-height: 1.2;
+    color: var(--green-dark);
+    margin-bottom: 22px;
+}
+
+.legacy-content p {
+    color: var(--text);
+    margin-bottom: 18px;
 }
 
 
@@ -1006,7 +1118,9 @@ ul {
     .hero-content,
     .about-grid,
     .contact-grid,
-    .service-detail-grid {
+    .service-detail-grid,
+    .client-feature-grid,
+    .legacy-grid {
         gap: 45px;
     }
 
@@ -1108,13 +1222,17 @@ ul {
 
     .about-grid,
     .contact-grid,
-    .service-detail-grid {
+    .service-detail-grid,
+    .client-feature-grid,
+    .legacy-grid {
         grid-template-columns: 1fr;
     }
 
     .about-content,
     .contact-content,
-    .service-detail-content {
+    .service-detail-content,
+    .client-feature-content,
+    .legacy-content {
         max-width: 100%;
     }
 
@@ -1125,6 +1243,22 @@ ul {
 
     .service-detail-image {
         order: -1;
+    }
+
+    .client-feature-content {
+        text-align: center;
+    }
+
+    .client-feature-content .section-label {
+        text-align: center;
+    }
+
+    .client-feature-image .client-photo {
+        height: 450px;
+    }
+
+    .legacy-image .client-photo {
+        height: 450px;
     }
 
     .footer-grid {
@@ -1174,6 +1308,14 @@ ul {
         min-height: 350px;
     }
 
+    .client-feature-image .client-photo {
+        height: 380px;
+    }
+
+    .legacy-image .client-photo {
+        height: 380px;
+    }
+
     .services-grid,
     .why-grid,
     .partners-grid,
@@ -1187,6 +1329,11 @@ ul {
 
     .section-heading h2,
     .about-content h2 {
+        font-size: 2.25rem;
+    }
+
+    .client-feature-content h2,
+    .legacy-content h2 {
         font-size: 2.25rem;
     }
 
@@ -1207,6 +1354,11 @@ ul {
     .service-card,
     .why-card {
         padding: 28px 22px;
+    }
+
+    .client-feature-content .btn,
+    .legacy-content .btn {
+        width: 100%;
     }
 
     .contact-form-container {
@@ -1268,7 +1420,18 @@ ul {
     .contact-content h2 {
         font-size: 2.1rem;
     }
+
+    .client-feature-content h2,
+    .legacy-content h2 {
+        font-size: 2rem;
+    }
+
+    .client-feature-image .client-photo,
+    .legacy-image .client-photo {
+        height: 330px;
+    }
 }
+
 
 /* =========================================================
    GENESIS LOGO - ABOUT PAGE
@@ -1283,3 +1446,4 @@ ul {
     display: block !important;
     margin: 0 auto !important;
 }
+```
