@@ -59,6 +59,8 @@
     <div class="container nav-container">
 
 
+        <!-- LOGO -->
+
         <a
             href="index.html"
             class="logo"
@@ -86,6 +88,7 @@
         </a>
 
 
+        <!-- MOBILE MENU -->
 
         <button
             class="menu-toggle"
@@ -102,6 +105,7 @@
         </button>
 
 
+        <!-- NAVIGATION -->
 
         <nav
             class="main-nav"
@@ -130,6 +134,13 @@
 
             <a href="index.html#reviews">
                 Reviews
+            </a>
+
+            <a
+                href="#faq"
+                class="faq-trigger"
+            >
+                FAQ
             </a>
 
             <a href="contact.html">
@@ -222,7 +233,6 @@
         </div>
 
 
-
         <div class="hero-image">
 
             <img
@@ -258,7 +268,6 @@
             >
 
         </div>
-
 
 
         <div class="about-content">
@@ -804,9 +813,7 @@
         <div class="reviews-layout">
 
 
-            <!-- =========================================
-                 PUBLIC REVIEWS
-            ========================================== -->
+            <!-- PUBLIC REVIEWS -->
 
             <div class="public-reviews">
 
@@ -822,8 +829,10 @@
                     </h3>
 
                     <p>
+
                         See what clients are saying about
                         their experience with Genesis & Co.
+
                     </p>
 
                 </div>
@@ -833,7 +842,7 @@
                 <div class="public-reviews-grid">
 
 
-                    <!-- SAMPLE REVIEW 1 -->
+                    <!-- REVIEW 1 -->
 
                     <article class="review-card">
 
@@ -875,13 +884,11 @@
 
                         </div>
 
-
-                        
                     </article>
 
 
 
-                    <!-- SAMPLE REVIEW 2 -->
+                    <!-- REVIEW 2 -->
 
                     <article class="review-card">
 
@@ -924,14 +931,11 @@
 
                         </div>
 
-
-                        
-
                     </article>
 
 
 
-                    <!-- SAMPLE REVIEW 3 -->
+                    <!-- REVIEW 3 -->
 
                     <article class="review-card">
 
@@ -973,13 +977,11 @@
 
                         </div>
 
-
-                       
                     </article>
 
 
 
-                    <!-- SAMPLE REVIEW 4 -->
+                    <!-- REVIEW 4 -->
 
                     <article class="review-card">
 
@@ -1021,9 +1023,6 @@
 
                         </div>
 
-
-                       
-
                     </article>
 
 
@@ -1033,9 +1032,7 @@
 
 
 
-            <!-- =========================================
-                 REVIEW SUBMISSION FORM
-            ========================================== -->
+            <!-- REVIEW FORM -->
 
             <div class="review-form-card">
 
@@ -1069,8 +1066,6 @@
                 >
 
 
-                    <!-- NAME -->
-
                     <div class="form-group">
 
                         <label for="reviewName">
@@ -1089,8 +1084,6 @@
                     </div>
 
 
-
-                    <!-- SERVICE -->
 
                     <div class="form-group">
 
@@ -1134,8 +1127,6 @@
 
 
 
-                    <!-- RATING -->
-
                     <div class="form-group">
 
                         <label for="reviewRating">
@@ -1178,8 +1169,6 @@
 
 
 
-                    <!-- REVIEW -->
-
                     <div class="form-group">
 
                         <label for="reviewMessage">
@@ -1198,8 +1187,6 @@
 
 
 
-                    <!-- EMAIL SUBJECT -->
-
                     <input
                         type="hidden"
                         name="_subject"
@@ -1214,8 +1201,6 @@
                     >
 
 
-
-                    <!-- SUBMIT -->
 
                     <button
                         type="submit"
@@ -1536,6 +1521,13 @@
                 Reviews
             </a>
 
+            <a
+                href="#faq"
+                class="faq-trigger"
+            >
+                FAQ
+            </a>
+
             <a href="contact.html">
                 Contact
             </a>
@@ -1588,6 +1580,275 @@
 </footer>
 
 
+
+<!-- =====================================================
+     FAQ CHAT MODAL
+===================================================== -->
+
+<div
+    class="faq-modal"
+    id="faqModal"
+    aria-hidden="true"
+>
+
+    <div
+        class="faq-overlay"
+        data-faq-close
+    ></div>
+
+
+    <div
+        class="faq-chat"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="faqTitle"
+    >
+
+
+        <!-- HEADER -->
+
+        <div class="faq-chat-header">
+
+            <div class="faq-header-info">
+
+                <span class="faq-online-dot"></span>
+
+
+                <div>
+
+                    <strong id="faqTitle">
+                        Genesis & Co. Assistant
+                    </strong>
+
+                    <small>
+                        Frequently Asked Questions
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <button
+                class="faq-close"
+                id="faqClose"
+                type="button"
+                aria-label="Close FAQ"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+
+        <!-- CHAT BODY -->
+
+        <div
+            class="faq-chat-body"
+            id="faqChatBody"
+        >
+
+
+            <div class="faq-message assistant-message">
+
+                <div class="faq-avatar">
+                    G
+                </div>
+
+
+                <div class="faq-bubble">
+
+                    <p>
+
+                        Hi! Welcome to Genesis & Co. Legacy Services.
+                        How can we help you today?
+
+                    </p>
+
+                    <small>
+                        Select a question below.
+                    </small>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CONVERSATION -->
+
+            <div
+                class="faq-conversation"
+                id="faqConversation"
+            ></div>
+
+
+
+            <!-- QUESTIONS -->
+
+            <div
+                class="faq-question-list"
+                id="faqQuestionList"
+            >
+
+
+                <button
+                    type="button"
+                    class="faq-question"
+                    data-faq="services"
+                >
+                    What services do you offer?
+                </button>
+
+
+                <button
+                    type="button"
+                    class="faq-question"
+                    data-faq="virtual"
+                >
+                    Can your services be completed virtually?
+                </button>
+
+
+                <button
+                    type="button"
+                    class="faq-question"
+                    data-faq="started"
+                >
+                    How do I get started?
+                </button>
+
+
+                <button
+                    type="button"
+                    class="faq-question"
+                    data-faq="consultation"
+                >
+                    How do I book a free consultation?
+                </button>
+
+
+                <button
+                    type="button"
+                    class="faq-question"
+                    data-faq="health"
+                >
+                    Do you help with ACA or Medicare plans?
+                </button>
+
+
+                <button
+                    type="button"
+                    class="faq-question"
+                    data-faq="health-cost"
+                >
+                    Can I qualify for low-cost health coverage?
+                </button>
+
+
+                <button
+                    type="button"
+                    class="faq-question"
+                    data-faq="life"
+                >
+                    What types of life insurance do you offer?
+                </button>
+
+
+                <button
+                    type="button"
+                    class="faq-question"
+                    data-faq="tax"
+                >
+                    What tax preparation services do you offer?
+                </button>
+
+
+                <button
+                    type="button"
+                    class="faq-question"
+                    data-faq="notary"
+                >
+                    How does Remote Notary work?
+                </button>
+
+
+                <button
+                    type="button"
+                    class="faq-question"
+                    data-faq="documents"
+                >
+                    What documents can be notarized?
+                </button>
+
+
+                <button
+                    type="button"
+                    class="faq-question"
+                    data-faq="realestate"
+                >
+                    Do you provide Real Estate services?
+                </button>
+
+
+                <button
+                    type="button"
+                    class="faq-question"
+                    data-faq="licensed"
+                >
+                    Are your professionals licensed and insured?
+                </button>
+
+
+                <button
+                    type="button"
+                    class="faq-question"
+                    data-faq="contact"
+                >
+                    How can I contact Genesis & Co.?
+                </button>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOOTER -->
+
+        <div class="faq-chat-footer">
+
+
+            <a
+                href="contact.html"
+                class="faq-footer-link"
+            >
+                Get Started
+            </a>
+
+
+            <a
+                href="https://calendly.com/genesislegacyservices/initial-consultation"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="faq-footer-book"
+            >
+                Book Free Consultation
+            </a>
+
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+
+<!-- JAVASCRIPT -->
 
 <script src="js/script.js"></script>
 
